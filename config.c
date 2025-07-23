@@ -1633,7 +1633,6 @@ int git_config_set_multivar_in_file(const char *config_filename,
 		free(store.key);
 		if (store.value_regex != NULL) {
 			regfree(store.value_regex);
-			free(store.value_regex);
 		}
 
 		/* if nothing to unset, or too many matches, error out */
